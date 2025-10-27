@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Finances</h1>
+      <button id="theme-toggle" class="btn small-btn">Dark Mode</button>
+    </header>
+
+    <main class="dashboard">
+      <div class="summary">
+        <div class="box">
+          <h3>Total Income</h3>
+          <p id="total-income">$0</p>
+        </div>
+        <div class="box">
+          <h3>Total Expenses</h3>
+          <p id="total-expense">$0</p>
+        </div>
+        <div class="box">
+          <h3>Balance</h3>
+          <p id="balance">$0</p>
+        </div>
+      </div>
+
+      <div class="budget-box">
+        <label for="budget-input">Set Monthly Budget ($):</label>
+        <input
+          type="number"
+          id="budget-input"
+          min="0"
+          placeholder="e.g. 1000"
+        />
+        <button id="save-budget" class="btn small-btn">Save Budget</button>
+        <p id="budget-warning" class="warning-text"></p>
+      </div>
+
+      <div class="actions">
+        <a href="add.html" class="btn">Add Transaction</a>
+        <a href="history.html" class="btn">View History</a>
+      </div>
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/dark.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

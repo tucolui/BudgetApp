@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Transaction History</h1>
+    </header>
+
+    <main class="history">
+      <div class="totals">
+        <p>Total Income: <span id="history-income">$0</span></p>
+        <p>Total Expense: <span id="history-expense">$0</span></p>
+      </div>
+
+      <table class="transactions-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Notes</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="transaction-list"></tbody>
+      </table>
+
+      <a href="index.html" class="btn back-btn">Back to Dashboard</a>
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/history.js"></script>
+  </body>
+</html>
